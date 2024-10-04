@@ -10,10 +10,10 @@ public class PlaySounds : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(PlaySoundsInSequence());
+        StartCoroutine(PlaySoundIntro());
     }
 
-    IEnumerator PlaySoundsInSequence()
+    IEnumerator PlaySoundIntro()
     {
         audioSource.clip = firstClip;
         audioSource.Play();
