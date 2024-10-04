@@ -1,0 +1,927 @@
+fileFormatVersion: 2
+guid: 847fb35273df0ba4f964bbdecf5854fc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3478909860636245465
+    second: FishNormal _0
+  - first:
+      213: 5425375178826002583
+    second: FishNormal _1
+  - first:
+      213: 9027422034909622288
+    second: FishNormal _2
+  - first:
+      213: -7079936695535132554
+    second: FishNormal _3
+  - first:
+      213: -2912390493979423529
+    second: FishNormal _4
+  - first:
+      213: -4692567322896764110
+    second: FishNormal _5
+  - first:
+      213: -2666185153671822437
+    second: FishNormal _6
+  - first:
+      213: -276002321805302333
+    second: FishNormal _7
+  - first:
+      213: 7011340071164705424
+    second: FishNormal _8
+  - first:
+      213: -2808661905931762585
+    second: FishNormal _9
+  - first:
+      213: 5159881529814359413
+    second: FishNormal _10
+  - first:
+      213: 1599606252895088330
+    second: FishNormal _11
+  - first:
+      213: -4218047912482541161
+    second: FishNormal _12
+  - first:
+      213: -7110692462583574421
+    second: FishNormal _13
+  - first:
+      213: -6644869013885252878
+    second: FishNormal _14
+  - first:
+      213: -501178624011530195
+    second: FishNormal _15
+  - first:
+      213: 9021185120083994517
+    second: FishNormal _16
+  - first:
+      213: -7166326132733826160
+    second: FishNormal _17
+  - first:
+      213: -8365976631035309533
+    second: FishNormal _18
+  - first:
+      213: -5362476903803033941
+    second: FishNormal _19
+  - first:
+      213: -2455766589874058503
+    second: FishNormal _20
+  - first:
+      213: -3371814361441309691
+    second: FishNormal _21
+  - first:
+      213: 3899292327291557943
+    second: FishNormal _22
+  - first:
+      213: -6416811000180082960
+    second: FishNormal _23
+  - first:
+      213: 1426457068873935807
+    second: FishNormal _24
+  - first:
+      213: -590095459572653534
+    second: FishNormal _25
+  - first:
+      213: -153352194728789784
+    second: FishNormal _26
+  - first:
+      213: -6330886009843914072
+    second: FishNormal _27
+  - first:
+      213: 7334069378230081296
+    second: FishNormal _28
+  - first:
+      213: 6463290234056299489
+    second: FishNormal _29
+  - first:
+      213: 6671634303968016613
+    second: FishNormal _30
+  - first:
+      213: 8526800678276328873
+    second: FishNormal _31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FishNormal _0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 670
+        width: 70
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7224c2fe9ed68bfc0800000000000000
+      internalID: -3478909860636245465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _1
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 674
+        width: 66
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7903523fafdca4b40800000000000000
+      internalID: 5425375178826002583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _2
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 656
+        width: 46
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 010725ce288d74d70800000000000000
+      internalID: 9027422034909622288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _3
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 659
+        width: 66
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 670206626130fbd90800000000000000
+      internalID: -7079936695535132554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _4
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 657
+        width: 70
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dcc127b64c1597d0800000000000000
+      internalID: -2912390493979423529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _5
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 655
+        width: 42
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 233f122d1e6a0eeb0800000000000000
+      internalID: -4692567322896764110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _6
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 551
+        width: 42
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9388f19abecffad0800000000000000
+      internalID: -2666185153671822437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _7
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 558
+        width: 66
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c5ac93c9517b2cf0800000000000000
+      internalID: -276002321805302333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _8
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 554
+        width: 70
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09afb35a5a84d4160800000000000000
+      internalID: 7011340071164705424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _9
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 546
+        width: 46
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76404c2a0e0a509d0800000000000000
+      internalID: -2808661905931762585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _10
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 560
+        width: 66
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57d1fa3c9e49b9740800000000000000
+      internalID: 5159881529814359413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _11
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 555
+        width: 70
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace2e447961f23610800000000000000
+      internalID: 1599606252895088330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _12
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 428
+        width: 42
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79176e295cb7675c0800000000000000
+      internalID: -4218047912482541161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _13
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 426
+        width: 46
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6098ac11eeb15d90800000000000000
+      internalID: -7110692462583574421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _14
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 431
+        width: 46
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fa8e5086dea8c3a0800000000000000
+      internalID: -6644869013885252878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _15
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 432
+        width: 42
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2016c262b47b09f0800000000000000
+      internalID: -501178624011530195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 284
+        width: 70
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59765a70210b13d70800000000000000
+      internalID: 9021185120083994517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 66
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09b2dc1e9581c8c90800000000000000
+      internalID: -7166326132733826160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _18
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 273
+        width: 42
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 322dbe3349416eb80800000000000000
+      internalID: -8365976631035309533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _19
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 284
+        width: 66
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba66598eaa7a495b0800000000000000
+      internalID: -5362476903803033941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _20
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 280
+        width: 70
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fac8473c4d5bedd0800000000000000
+      internalID: -2455766589874058503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _21
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 266
+        width: 46
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50ceab1f3b8e431d0800000000000000
+      internalID: -3371814361441309691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _22
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 171
+        width: 46
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7389e9b56b11d1630800000000000000
+      internalID: 3899292327291557943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _23
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 185
+        width: 66
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6727f9468e2f6a0800000000000000
+      internalID: -6416811000180082960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _24
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 181
+        width: 70
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbb639d752bcbc310800000000000000
+      internalID: 1426457068873935807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _25
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 166
+        width: 42
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 222e9945e4f8fc7f0800000000000000
+      internalID: -590095459572653534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _26
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 179
+        width: 66
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e8f9abcdfe2fddf0800000000000000
+      internalID: -153352194728789784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _27
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 175
+        width: 70
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aa63cd67bc2428a0800000000000000
+      internalID: -6330886009843914072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _28
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 46
+        width: 46
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 017597fed39d7c560800000000000000
+      internalID: 7334069378230081296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _29
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 47
+        width: 42
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e35d21593832b950800000000000000
+      internalID: 6463290234056299489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _30
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 49
+        width: 42
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e8f2573d08669c50800000000000000
+      internalID: 6671634303968016613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishNormal _31
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 55
+        width: 46
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ad683b3a08455670800000000000000
+      internalID: 8526800678276328873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      FishNormal _0: -3478909860636245465
+      FishNormal _1: 5425375178826002583
+      FishNormal _10: 5159881529814359413
+      FishNormal _11: 1599606252895088330
+      FishNormal _12: -4218047912482541161
+      FishNormal _13: -7110692462583574421
+      FishNormal _14: -6644869013885252878
+      FishNormal _15: -501178624011530195
+      FishNormal _16: 9021185120083994517
+      FishNormal _17: -7166326132733826160
+      FishNormal _18: -8365976631035309533
+      FishNormal _19: -5362476903803033941
+      FishNormal _2: 9027422034909622288
+      FishNormal _20: -2455766589874058503
+      FishNormal _21: -3371814361441309691
+      FishNormal _22: 3899292327291557943
+      FishNormal _23: -6416811000180082960
+      FishNormal _24: 1426457068873935807
+      FishNormal _25: -590095459572653534
+      FishNormal _26: -153352194728789784
+      FishNormal _27: -6330886009843914072
+      FishNormal _28: 7334069378230081296
+      FishNormal _29: 6463290234056299489
+      FishNormal _3: -7079936695535132554
+      FishNormal _30: 6671634303968016613
+      FishNormal _31: 8526800678276328873
+      FishNormal _4: -2912390493979423529
+      FishNormal _5: -4692567322896764110
+      FishNormal _6: -2666185153671822437
+      FishNormal _7: -276002321805302333
+      FishNormal _8: 7011340071164705424
+      FishNormal _9: -2808661905931762585
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
