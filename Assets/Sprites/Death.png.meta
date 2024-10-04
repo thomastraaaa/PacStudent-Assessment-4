@@ -1,31 +1,16 @@
 fileFormatVersion: 2
-guid: 0e179e89df175254cac126f99bfe1736
+guid: cfdb9d7c3024255408dd0904833a8a60
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8460862473975722427
-    second: FishNormal_0
+      213: 6991849013916550155
+    second: Death_0
   - first:
-      213: -4087268808812323551
-    second: FishNormal_1
+      213: -276728812324164698
+    second: Death_1
   - first:
-      213: -2169028412926821278
-    second: FishNormal_2
-  - first:
-      213: 706699520446830503
-    second: FishNormal_3
-  - first:
-      213: 1245269928314817611
-    second: FishNormal_4
-  - first:
-      213: 6086500851944217552
-    second: FishNormal_5
-  - first:
-      213: 7685139644267386927
-    second: FishNormal_6
-  - first:
-      213: 7594710340655008272
-    second: FishNormal_7
+      213: 3156895337291164288
+    second: Death_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -134,13 +119,55 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FishNormal_0
+      name: Death_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 299
+        x: 35
+        y: 31
+        width: 58
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0449ad32a9080160800000000000000
+      internalID: 6991849013916550155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_1
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 31
+        width: 58
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab6d428c9cd82cf0800000000000000
+      internalID: -276728812324164698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_2
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 31
         width: 66
-        height: 42
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,155 +175,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 54e8e31586af49a80800000000000000
-      internalID: -8460862473975722427
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FishNormal_1
-      rect:
-        serializedVersion: 2
-        x: 155
-        y: 295
-        width: 70
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 12d15357caa1747c0800000000000000
-      internalID: -4087268808812323551
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FishNormal_2
-      rect:
-        serializedVersion: 2
-        x: 287
-        y: 299
-        width: 66
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 26c74c3862016e1e0800000000000000
-      internalID: -2169028412926821278
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FishNormal_3
-      rect:
-        serializedVersion: 2
-        x: 27
-        y: 167
-        width: 70
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7a71c273873bec900800000000000000
-      internalID: 706699520446830503
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FishNormal_4
-      rect:
-        serializedVersion: 2
-        x: 159
-        y: 171
-        width: 66
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b4c4eaee666184110800000000000000
-      internalID: 1245269928314817611
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FishNormal_5
-      rect:
-        serializedVersion: 2
-        x: 283
-        y: 167
-        width: 70
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0db5f35f648977450800000000000000
-      internalID: 6086500851944217552
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FishNormal_6
-      rect:
-        serializedVersion: 2
-        x: 31
-        y: 43
-        width: 66
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f2854d1f9c917aa60800000000000000
-      internalID: 7685139644267386927
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FishNormal_7
-      rect:
-        serializedVersion: 2
-        x: 155
-        y: 39
-        width: 70
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 01a4abaf0d4d56960800000000000000
-      internalID: 7594710340655008272
+      spriteID: 08aa354559b8fcb20800000000000000
+      internalID: 3156895337291164288
       vertices: []
       indices: 
       edges: []
@@ -312,14 +192,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FishNormal_0: -8460862473975722427
-      FishNormal_1: -4087268808812323551
-      FishNormal_2: -2169028412926821278
-      FishNormal_3: 706699520446830503
-      FishNormal_4: 1245269928314817611
-      FishNormal_5: 6086500851944217552
-      FishNormal_6: 7685139644267386927
-      FishNormal_7: 7594710340655008272
+      Death_0: 6991849013916550155
+      Death_1: -276728812324164698
+      Death_2: 3156895337291164288
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
