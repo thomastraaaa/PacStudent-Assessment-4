@@ -1,84 +1,79 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PacStudentMovement : MonoBehaviour
+public class PacStudentController : MonoBehaviour
 {
-    public Transform[] waypoints; 
-    public float speed = 2f;        
-    public AudioSource movingAudio; 
-    public Animator animator;      
+    public Transform[] movementPoints;
+    public float movementSpeed = 2f;
+    public AudioSource movementAudio; 
+    public Animator characterAnimator;
 
-    private int currentWaypointIndex = 0;
-    private bool isMoving = false;
-    private bool gameStarted = false;
+    private int nextWaypointIndex = 0;
+    private bool isCurrentlyMoving = false;
+    private bool hasGameStarted = false;
 
     void Start()
     {
-        StartCoroutine(DelayGameStart());
-        transform.position = waypoints[currentWaypointIndex].position;
-        animator.enabled = false;
+        StartCoroutine(StartWithDelay());
+        if (movementPoints != null && movementPoints.Length > 0)
+        {
+            transform.position = movementPoints[nextWaypointIndex].position;
+        }
+        characterAnimator.enabled = false;
     }
 
     void Update()
     {
-        if (!gameStarted)
-        {
-            return;
-        }
+        if (!hasGameStarted) return;
 
-        if (isMoving)
+        if (isCurrentlyMoving)
         {
-            if (!movingAudio.isPlaying)
+            if (!movementAudio.isPlaying)
             {
-                movingAudio.Play();
+                movementAudio.Play();
             }
-
-            animator.SetBool("isMoving", true);
+            characterAnimator.SetBool("isMoving", true);
         }
         else
         {
-            if (movingAudio.isPlaying)
+            if (movementAudio.isPlaying)
             {
-                movingAudio.Stop();
+                movementAudio.Stop();
             }
-
-            animator.SetBool("isMoving", false);
+            characterAnimator.SetBool("isMoving", false);
         }
     }
 
-    IEnumerator DelayGameStart()
+    IEnumerator StartWithDelay()
     {
         yield return new WaitForSeconds(3f);
-        animator.enabled = true;
-        gameStarted = true;
-        StartCoroutine(MoveClockwise());
+        characterAnimator.enabled = true;
+        hasGameStarted = true;
+        StartCoroutine(CycleWaypoints());
     }
 
-    IEnumerator MoveClockwise()
+    IEnumerator CycleWaypoints()
     {
         while (true)
         {
-            isMoving = true;
-            currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Length;
-            Vector3 startPosition = transform.position;
-            Vector3 targetPosition = waypoints[currentWaypointIndex].position;
-            float journeyLength = Vector3.Distance(startPosition, targetPosition);
+            isCurrentlyMoving = true;
+            nextWaypointIndex = (nextWaypointIndex + 1) % movementPoints.Length;
+            Vector3 start = transform.position;
+            Vector3 destination = movementPoints[nextWaypointIndex].position;
+            float distance = Vector3.Distance(start, destination);
             float startTime = Time.time;
 
-            while (Vector3.Distance(transform.position, targetPosition) > 0.01f)
+            while (Vector3.Distance(transform.position, destination) > 0.01f)
             {
-                float distCovered = (Time.time - startTime) * speed;
-                float fractionOfJourney = distCovered / journeyLength;
-                transform.position = Vector3.Lerp(startPosition, targetPosition, fractionOfJourney);
-                yield return null; 
+                float coveredDistance = (Time.time - startTime) * movementSpeed;
+                float journeyFraction = coveredDistance / distance;
+                transform.position = Vector3.Lerp(start, destination, journeyFraction);
+                yield return null;
             }
 
-            transform.position = targetPosition;
-            isMoving = false;
+            transform.position = destination;
+            isCurrentlyMoving = false;
             yield return new WaitForSeconds(0.5f);
         }
     }
 }
-
-
