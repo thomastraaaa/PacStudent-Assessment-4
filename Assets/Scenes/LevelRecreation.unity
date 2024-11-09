@@ -32991,6 +32991,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1099904585}
   - component: {fileID: 1099904584}
+  - component: {fileID: 1099904586}
   m_Layer: 0
   m_Name: PacStudent
   m_TagString: Untagged
@@ -33067,6 +33068,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1455334423}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1099904586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099904583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e230661fc775645acb84d7c3650dd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
+  gridPosition: {x: 0, y: 0}
+  animator: {fileID: 0}
+  pelletAudioSource: {fileID: 0}
+  movementAudioSource: {fileID: 0}
+  eatingPelletClip: {fileID: 0}
+  movementClip: {fileID: 0}
+  dustParticles: {fileID: 0}
 --- !u!1 &1104913702
 GameObject:
   m_ObjectHideFlags: 0
