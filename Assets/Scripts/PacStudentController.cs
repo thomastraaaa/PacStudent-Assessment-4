@@ -11,12 +11,16 @@ public class PacStudentController : MonoBehaviour
     private string currentInput = "";
     private bool isLerping = false;
     private float lerpProgress = 0f;
+
+    // Animator, audio, particles, and wall collision
     public Animator animator;
     public AudioSource pelletAudioSource;   
     public AudioSource movementAudioSource;
     public AudioClip eatingPelletClip;
     public AudioClip movementClip;
     public ParticleSystem dustParticles;
+    public GameObject wallCollisionEffectPrefab;
+    public AudioClip wallCollisionSound;
 
     void Start()
     {
@@ -26,13 +30,25 @@ public class PacStudentController : MonoBehaviour
 
     void Update()
     {
-        // checks the last input
         if (Input.GetKeyDown(KeyCode.W)) lastInput = "up";
         else if (Input.GetKeyDown(KeyCode.A)) lastInput = "left";
         else if (Input.GetKeyDown(KeyCode.S)) lastInput = "down";
         else if (Input.GetKeyDown(KeyCode.D)) lastInput = "right";
 
-        // animator checks 
+        UpdateAnimatorParameters();
+
+        if (!isLerping)
+        {
+            ProcessMovement();
+        }
+        else
+        {
+            LerpMovement();
+        }
+    }
+
+    void UpdateAnimatorParameters()
+    {
         if (lastInput == "up")
         {
             animator.SetFloat("Vertical", 1);
@@ -53,22 +69,12 @@ public class PacStudentController : MonoBehaviour
             animator.SetFloat("Horizontal", 1);
             animator.SetFloat("Vertical", 0);
         }
-
-        if (!isLerping)
-        {
-            ProcessMovement();
-        }
-        else
-        {
-            LerpMovement();
-        }
     }
 
     void ProcessMovement()
     {
         Vector2 newPosition = gridPosition;
 
-        // determine movement based on the pervious input
         if (lastInput == "up") newPosition += Vector2.up;
         else if (lastInput == "down") newPosition += Vector2.down;
         else if (lastInput == "left") newPosition += Vector2.left;
@@ -92,16 +98,7 @@ public class PacStudentController : MonoBehaviour
         }
         else
         {
-            newPosition = gridPosition;
-            if (currentInput == "up") newPosition += Vector2.up;
-            else if (currentInput == "down") newPosition += Vector2.down;
-            else if (currentInput == "left") newPosition += Vector2.left;
-            else if (currentInput == "right") newPosition += Vector2.right;
-
-            if (IsWalkable(newPosition))
-            {
-                SetTargetPosition(newPosition);
-            }
+            HandleWallCollision();
         }
     }
 
@@ -133,10 +130,40 @@ public class PacStudentController : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Wall"))
+        {
+            HandleWallCollision();
+        }
+    }
+
+    void HandleWallCollision()
+    {
+        if (wallCollisionEffectPrefab)
+        {
+            Instantiate(wallCollisionEffectPrefab, transform.position, Quaternion.identity);
+        }
+
+        if (wallCollisionSound && pelletAudioSource)
+        {
+            pelletAudioSource.PlayOneShot(wallCollisionSound);
+        }
+
+        targetPosition = gridPosition;
+        isLerping = false;
+    }
+
     bool IsWalkable(Vector2 position)
     {
+        Collider2D hitCollider = Physics2D.OverlapPoint(position);
+        if (hitCollider != null && hitCollider.CompareTag("Wall"))
+        {
+            return false;
+        }
         return true;
     }
+
     bool IsPellet(Vector2 position)
     {
         return false;
