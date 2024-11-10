@@ -21,12 +21,12 @@ public class CherryController : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer <= 0f)
         {
-            SpawnAndMoveCherry();
+            CherryControl();
             timer = spawnInterval;
         }
     }
 
-    void SpawnAndMoveCherry()
+    void CherryControl()
     {
         int spawnSide = Random.Range(0, 4);
         Vector2 spawnPosition = GetSpawnPosition(spawnSide);
