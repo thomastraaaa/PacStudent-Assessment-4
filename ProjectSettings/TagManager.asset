@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Wall
+  - TeleporterLeft
+  - TeleporterRight
+  - Pellet
+  - Cherry
+  - PowerPellet
+  - PowerPIll
   layers:
   - Default
   - TransparentFX
