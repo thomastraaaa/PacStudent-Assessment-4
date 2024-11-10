@@ -12,6 +12,8 @@ public class PacStudentController : MonoBehaviour
     private bool isLerping = false;
     private float lerpProgress = 0f;
 
+    public ScoreManager scoreManager;
+
     // Animator, audio, particles, and wall collision
     public Animator animator;
     public AudioSource pelletAudioSource;   
@@ -47,6 +49,7 @@ public class PacStudentController : MonoBehaviour
         }
     }
 
+    // update the movement animation based on the last input
     void UpdateAnimatorParameters()
     {
         if (lastInput == "up")
@@ -71,6 +74,7 @@ public class PacStudentController : MonoBehaviour
         }
     }
 
+    // determining movement based on the last input
     void ProcessMovement()
     {
         Vector2 newPosition = gridPosition;
@@ -89,6 +93,7 @@ public class PacStudentController : MonoBehaviour
             {
                 pelletAudioSource.clip = eatingPelletClip;
                 pelletAudioSource.Play();
+                DestroyPellet(newPosition); 
             }
             else
             {
@@ -130,14 +135,26 @@ public class PacStudentController : MonoBehaviour
         }
     }
 
+    // collision triggers with tags
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Wall"))
         {
             HandleWallCollision();
         }
+
+        else if (other.CompareTag("Pellet"))
+        {
+            DestroyPellet(other.transform.position);
+        }
+
+        else if (other.CompareTag("Cherry"))
+        {
+            DestroyCherry(other.gameObject);
+        }
     }
 
+    // play wall collisions effects, sound clips
     void HandleWallCollision()
     {
         if (wallCollisionEffectPrefab)
@@ -147,7 +164,7 @@ public class PacStudentController : MonoBehaviour
 
         if (wallCollisionSound && pelletAudioSource)
         {
-            pelletAudioSource.PlayOneShot(wallCollisionSound);
+            pelletAudioSource.PlayOneShot(wallCollisionSound, 0.3f);
         }
 
         targetPosition = gridPosition;
@@ -166,6 +183,24 @@ public class PacStudentController : MonoBehaviour
 
     bool IsPellet(Vector2 position)
     {
-        return false;
+        return Physics2D.OverlapPoint(position) != null && 
+               Physics2D.OverlapPoint(position).CompareTag("Pellet");
+    }
+
+    void DestroyPellet(Vector2 position)
+    {
+        // if tag pellet is found, destroy it and add 10 to score
+        Collider2D pelletCollider = Physics2D.OverlapPoint(position);
+        if (pelletCollider != null && pelletCollider.CompareTag("Pellet"))
+        {
+            Destroy(pelletCollider.gameObject);
+            scoreManager.AddScore(10);
+        }
+    }
+
+    void DestroyCherry(GameObject cherry)
+    {
+        Destroy(cherry);
+        scoreManager.AddScore(100); 
     }
 }
